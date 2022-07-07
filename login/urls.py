@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = {
     path('',views.user_register, name = 'registrar_usuario'),
-    path('cadastra/', views.cadastra, name='cadastrar')
+    path('', views.profile, name='perfil_usuario' ),
+    # path('cadastra/', views.cadastra, name='cadastrar')
     # path('api/salvar_usuario',views.salvar_usuario, name = 'salvar_usuario')
 }
