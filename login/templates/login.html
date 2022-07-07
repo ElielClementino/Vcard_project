@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '../static/login.css'%}">
+    <title>Vcard-login</title>
+</head>
+<body>
+    <main>
+        <section class="section_registro">
+            <h1 class="section_registro_h1">Visit Card</h1>
+            <div class="section_registro_div">
+                <h3 class="section_registro_h3">Entre no Visit Card</h3>
+                <form action="" class="registro_div_form">
+                    <input class="div_form_input"  type="text" required placeholder="Nome">
+                    <input class="div_form_input"  type="text" required placeholder="Sobrenome">
+                    <input class="div_form_input"  type="email" required placeholder="Email">
+                    <input class="div_form_input"  type="password" required placeholder="Nova senha">
+                    <label class="div_form_label nascimento">Data de nascimento</label>
+                    <input class="div_form_input"  type="Date" required>
+                    <label class="div_form_radio">Gênero</label>
+                    <legend class="div_form_legend">Masculino</legend>
+                    <input type="radio" class="div_form_radios" name="div_form_radios">
+                    <legend class="div_form_legend">Feminino</legend>
+                    <input type="radio" class="div_form_radios" name="div_form_radios">
+                    <button  value="Cadastre-se"><a href="{% url 'cadastrar'%}">Gerar Vcard</a></button>
+                </form>
+                <p><a class='registro_div_ancora' href="login.html">Já tem uma conta ?</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
