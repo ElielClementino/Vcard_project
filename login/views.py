@@ -31,7 +31,6 @@ def user_register(request):
             return response
 
 
-        #return render(request, 'login.html',{'form':form})
 
 def profile(request):
     return render(request, 'vcard.html')
