@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/login/static/apresentacao.css" />
+    <link rel="stylesheet" href="{% static '/login/static/apresentacao.css' %}" />
     <title>Pagina inicial</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
           informações comerciais sobre uma empresa ou indivíduo. Cadastre-se
           para obter o seu cartão pessoal.
         </p>
-        <button class="register"><a href="receber.dados">Cadastre-se</a></button>
+        <button class="register"><a href="{% url 'receber' %}">Cadastre-se</a></button>
       </section>
     </main>
   </body>
