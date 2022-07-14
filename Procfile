@@ -1,0 +1,1 @@
+web: gunicorn projetovcard.wsg --log-file -
