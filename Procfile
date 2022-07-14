@@ -1,1 +1,1 @@
-web: gunicorn projetovcard.wsg --log-file -
+web: gunicorn vcard.wsgi --log-file -
