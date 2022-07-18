@@ -1,6 +1,7 @@
 <div class='badges'>
 <!--   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ElielClementino/Vcard_project"> -->
   <img alt="PyPI - Status" src="https://img.shields.io/pypi/status/django">
+  <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/ElielClementino/Vcard_project">
 </div>
 <h1>Vcard Project</h1>
 <h6>Projeto Vcard escrito em python/django</h6>
