@@ -3,6 +3,6 @@
 <h1>Vcard Project</h1>
 <h6>Projeto Vcard escrito em python/django</h6>
 <h2>Colaboradores(a):</h2>
-<img src='https://avatars.githubusercontent.com/u/94757087?v=4'>
+<img style:'width:60px; border-radius:5px;'src='https://avatars.githubusercontent.com/u/94757087?v=4'>
 <img src=''>
-<img src='https://avatars.githubusercontent.com/u/104435948?v=4'>
+<img style'width:60px; border-radius:5px;' src='https://avatars.githubusercontent.com/u/104435948?v=4'>
