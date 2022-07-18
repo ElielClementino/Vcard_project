@@ -5,6 +5,6 @@
 <h2>Colaboradores(a):</h2>
 <div style='display:flex;'>
 <img style='width:120px; border-radius:5px;'src='https://avatars.githubusercontent.com/u/94757087?v=4'>
-<img src=''>
+<img style='width:120px; border-radius:5px;' src='https://avatars.githubusercontent.com/u/103268344?v=4'>
 <img style='width:120px; border-radius:5px;' src='https://avatars.githubusercontent.com/u/104435948?v=4'>
 </div>
