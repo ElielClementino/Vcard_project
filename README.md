@@ -4,8 +4,9 @@
   <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/ElielClementino/Vcard_project">
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/ElielClementino/Vcard_project">
 </div>
-<h1>Vcard Project</h1>
-<h6>Projeto Vcard escrito em python/django</h6>
+<h1 style='font-size:2rem'>Vcard Project</h1>
+<h6 style='font-size:1.5rem'>Projeto Vcard escrito em python/django</h6><br>
+<p>Em suas funções o projeto tem como intuito gerar Vcard, tanto em html quanto um arquivo de download para que possa ser compartilhado</p>
 <hr>
 <hr>
 <img style='width:120px; border-radius:5px;' src='https://w7.pngwing.com/pngs/732/982/png-transparent-vcard-apple-data-conversion-apple-logo-fruit-nut-data-thumbnail.png'>
