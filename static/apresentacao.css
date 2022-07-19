@@ -7,6 +7,16 @@ body {
   background: linear-gradient(to bottom right, #eaf6f6, #66bfbf);
   background-repeat: no-repeat;
 }
+
+/* Navbar */
+.container {
+  display: flex;
+  background-color: #f2ebe9;
+  width: 100%;
+  height: 8%;
+  font-size: 100px;
+}
+
 .content {
   display: flex;
   justify-content: center;
@@ -50,3 +60,4 @@ body {
   transform: scale(1.1);
   transition: 0.4s;
 }
+

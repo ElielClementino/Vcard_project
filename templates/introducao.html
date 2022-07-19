@@ -6,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static '../static/apresentacao.css' %}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="{% static '/login/static/apresentacao.css' %}" />
     <title>Pagina inicial</title>
   </head>
   <body>
     <main>
+      <div class="container">
+        <nav >
+          <a class="navbar-brand" href="/">VCard</a>
+            <ul >
+              <li class="nav-item">
+                <a class="nav-link login" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link gerar" href="{% url 'receber' %}">Gerar VCard</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
       <section class="content">
         <h1 class="principal-title">Your online Visit Card</h1>
         <p class="explanation">
@@ -32,8 +35,17 @@
           informações comerciais sobre uma empresa ou indivíduo. Cadastre-se
           para obter o seu cartão pessoal.
         </p>
-        <button class="register"><a href="{% url 'receber' %}">Cadastre-se</a></button>
+        <button class="register"><a href="">Cadastre-se</a></button>
       </section>
     </main>
   </body>
 </html>
+
+
+
+
+
+
+
+
+    
