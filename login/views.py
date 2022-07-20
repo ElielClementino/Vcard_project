@@ -33,7 +33,7 @@ def user_register(request):
 
 
 def profile(request):
-    return render(request, 'vcard.html')
+    return render(request, 'login.html')
 
 def gerar_vcard(nome, sobrenome, profissao, email, telefone):
     original_stdout = sys.stdout
