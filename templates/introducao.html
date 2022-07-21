@@ -6,30 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static '../static/apresentacao.css' %}" />
-    <link rel="stylesheet" href="{% static '../static/corpo.css' %}" />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet" />  
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet"/>
     <title>Pagina inicial</title>
   </head>
   <body>
     <main>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Gerar 
-            
-          </li>
-          <li></li>
-        </ul>
-      </nav>
       <section class="content">
         <h1 class="principal-title">Your online Visit Card</h1>
         <p class="explanation">
           Os cartões de visita -do inglês, "Visit Card"- são cartões com
           informações comerciais sobre uma empresa ou indivíduo. Cadastre-se
-          para obter o seu cartão pessoal.
+          para obter o seu cartão pessoal, ou caso já possua uma conta faça login.
         </p>
-        <button class="register"><a href="">Cadastre-se</a></button>
+        <div class="div_button">
+        <button class="register"><a href="{% url 'user.login' %}" style='color:rgb(0, 128, 0);font-size:20pt; font-weight:bolder;' class="register_ancora">login</a></button>
+        <button class="register"><a href="" style='color:rgb(0, 128, 0);font-size:20pt; font-weight:bolder;' class="register_ancora">Cadastre-se</a></button>
+      </div>
       </section>
     </main>
   </body>

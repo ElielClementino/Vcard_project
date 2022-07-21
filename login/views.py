@@ -6,14 +6,10 @@ import os
 from django.http import HttpResponse
 
 
-def profile(request):
-    return render(request, 'vcard.html')
-
-
 def user_register(request):
     if request.method == "GET":
         form = Formulario()
-        return render(request, 'login.html',{'form':form})
+        return render(request, 'formvalidation.html',{'form':form})
     else:
         form = Formulario(request.POST)
         nome = form.data['nome']
@@ -28,12 +24,13 @@ def user_register(request):
             #response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
             response = HttpResponse(fh.read(), content_type="application/text")  #file 
             response['Content-Disposition'] = 'inline; filename=' + os.path.basename(vcf)
+            # response['Content-Disposition'] = 'inline; filename=' + os.path.basename(vcf)
             return response
 
 
 
 def profile(request):
-    return render(request, 'login.html')
+    return render(request, 'formvalidation.html')
 
 def gerar_vcard(nome, sobrenome, profissao, email, telefone):
     original_stdout = sys.stdout

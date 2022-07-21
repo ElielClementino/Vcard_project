@@ -1,55 +1,50 @@
 html {
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  body {
-    background: linear-gradient(to bottom right, #eaf6f6, #66bfbf);
-    background-repeat: no-repeat;
-  }
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50vh;
-    margin-top: 13%;
-    margin-left: 36%;
-  }
-  
-  .principal-title {
-    font-family: "Pangolin", cursive;
-    font-size: 3rem;
-    text-align: center;
-  }
-  
-  .explanation {
-    font-family: "Sawarabi Gothic", sans-serif;
-    font-size: 1.7rem;
-    text-align: justify;
-  }
-  
-  .register {
-    border-radius: 24px;
-    width: 196px;
-    height: 48px;
-    border: none;
-    box-shadow: rgb(0 0 0 / 14%) 9px 5px 16px 1px;
-    background-color: #f2ebe9;
-    color: white;
-  }
-  
-  .register > a {
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .register:hover {
-    background-color: aliceblue;
-    transform: scale(1.1);
-    transition: 0.4s;
-  }
-  .container{
-    font-size:30pt;
-  }
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  background: linear-gradient(to bottom right, #eaf6f6, #66bfbf);
+  background-repeat: no-repeat;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35rem;
+  align-self: center;
+  margin-left: 40rem;
+  margin-top:12rem;
+}
+.principal-title {
+  font-family: "Pangolin", cursive;
+  font-size: 3rem;
+}
+.explanation {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+.register {
+  border-radius: 24px;
+  width: 196px;
+  height: 48px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 14%) 9px 5px 16px 1px;
+  background-color: #f2ebe9;
+  color: white;
+  margin:1.1rem;
+}
+
+.register > a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.register:hover {
+  background-color: aliceblue;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
