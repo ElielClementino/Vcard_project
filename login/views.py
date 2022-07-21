@@ -1,5 +1,3 @@
-from operator import contains
-import sys
 from django.shortcuts import render
 from login.forms import Formulario
 import os
@@ -19,13 +17,8 @@ def user_register(request):
         telefone = form.data['telefone']
 
         vcf = gerar_vcard(nome, sobrenome,profissao ,email, telefone)
+        return  HttpResponse(vcf, content_type="application/text")  #file 
 
-        with open(vcf, 'rb') as fh:
-            #response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
-            response = HttpResponse(fh.read(), content_type="application/text")  #file 
-            response['Content-Disposition'] = 'inline; filename=' + os.path.basename(vcf)
-            # response['Content-Disposition'] = 'inline; filename=' + os.path.basename(vcf)
-            return response
 
 
 
@@ -33,8 +26,7 @@ def profile(request):
     return render(request, 'formvalidation.html')
 
 def gerar_vcard(nome, sobrenome, profissao, email, telefone):
-    original_stdout = sys.stdout
-    output = print(f""" 
+    output = f""" 
         Begin: VCARD
         Version: 1.0
         FullName: {nome} {sobrenome}
@@ -42,30 +34,8 @@ def gerar_vcard(nome, sobrenome, profissao, email, telefone):
         Email: {email}
         PhoneNumber: {telefone}
         End: My VCARD by {nome} {sobrenome}
-        """)
+        """
     print(output)
     contact_file = './login/templates/contact.vcf'
-    with open(contact_file, 'w') as download:
-        download.writelines(f""" 
-        Begin: VCARD
-        Version: 1.0
-        FullName: {nome} {sobrenome}
-        Profission: {profissao}
-        Email: {email}
-        PhoneNumber: {telefone}
-        End: My VCARD by {nome} {sobrenome}
-        """)
-
-    return contact_file
-
-
-        # sys.stdout = download
-        # sys.stdout = original_stdout
-
-
-
-"""
-2) Gerar um arquivo nome_completo.VCF (pesquisar como gerar arquivo txt em python)
-
-3) Pequisar como retornar um File no Django para o frontend fazer download
-"""
+    return output
+    

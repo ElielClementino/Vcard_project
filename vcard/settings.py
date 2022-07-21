@@ -139,6 +139,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # auth_user validation
 
-LOGIN_REDIRECT_URL = 'user.profile'
+LOGIN_REDIRECT_URL = 'receber.dados'
 LOGOUT_REDIRECT_URL = 'home.intro'
 LOGIN_URL = 'login'

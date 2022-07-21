@@ -1,8 +1,4 @@
-import email
-from unicodedata import name
-from xml.dom import ValidationErr
 from django import forms
-from django.shortcuts import render
 
 
 class Formulario(forms.Form):
