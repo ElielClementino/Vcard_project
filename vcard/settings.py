@@ -35,17 +35,22 @@ ALLOWED_HOSTS = ['*',]
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
+DJANGO_OWN_APPS = ['django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', ]
+
+MY_LOCAL_APPS = [
     'login',
     'uservalidation',
+]
+
+OUTER_APPS = [
     'crispy_forms',
 ]
+INSTALLED_APPS = DJANGO_OWN_APPS + MY_LOCAL_APPS + OUTER_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,8 +142,10 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
-# auth_user validation
+# auth_user login
 
 LOGIN_REDIRECT_URL = 'receber.dados'
 LOGOUT_REDIRECT_URL = 'home.intro'
 LOGIN_URL = 'login'
+
+# auth_user register

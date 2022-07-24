@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet" />  
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet"/>
     <title>Pagina inicial</title>
+    <style>
+      .register_ancora{
+        font-size:20pt;
+        font-weight:bolder;
+        color:rgb(0, 128, 0);
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -20,8 +27,8 @@
           para obter o seu cartão pessoal, ou caso já possua uma conta faça login.
         </p>
         <div class="div_button">
-        <button class="register"><a href="{% url 'user.login' %}" style='color:rgb(0, 128, 0);font-size:20pt; font-weight:bolder;' class="register_ancora">login</a></button>
-        <button class="register"><a href="" style='color:rgb(0, 128, 0);font-size:20pt; font-weight:bolder;' class="register_ancora">Cadastre-se</a></button>
+        <button class="register"><a href="{% url 'user.login' %}" class="register_ancora">login</a></button>
+        <button class="register"><a href="{% url 'user.register' %}" class="register_ancora">Cadastre-se</a></button>
       </div>
       </section>
     </main>

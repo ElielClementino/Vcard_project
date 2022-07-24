@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from login.forms import Formulario
-import os
 from django.http import HttpResponse
 
 
@@ -17,7 +16,8 @@ def user_register(request):
         telefone = form.data['telefone']
 
         vcf = gerar_vcard(nome, sobrenome,profissao ,email, telefone)
-        return  HttpResponse(vcf, content_type="application/text")  #file 
+        return HttpResponse(vcf, content_type="application/text")  #file
+        
 
 
 
@@ -35,7 +35,4 @@ def gerar_vcard(nome, sobrenome, profissao, email, telefone):
         PhoneNumber: {telefone}
         End: My VCARD by {nome} {sobrenome}
         """
-    print(output)
-    contact_file = './login/templates/contact.vcf'
     return output
-    
