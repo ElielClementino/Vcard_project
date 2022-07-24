@@ -15,6 +15,9 @@
         font-weight:bolder;
         color:rgb(0, 128, 0);
       }
+      .register{
+        color:rgb(0, 128, 0);
+      }
     </style>
   </head>
   <body>
@@ -22,13 +25,24 @@
       <section class="content">
         <h1 class="principal-title">Your online Visit Card</h1>
         <p class="explanation">
+          {% if request.user.is_authenticated == False %}
           Os cartões de visita -do inglês, "Visit Card"- são cartões com
           informações comerciais sobre uma empresa ou indivíduo. Cadastre-se
           para obter o seu cartão pessoal, ou caso já possua uma conta faça login.
         </p>
+        {% else %}
+        <p class="explanation">
+          Os cartões de visita -do inglês, "Visit Card"- são cartões com
+          informações comerciais sobre uma empresa ou indivíduo. Gere já o seu, basta clicar no botão abaixo.
+        </p>
+        {% endif %}
         <div class="div_button">
+        {% if request.user.is_authenticated == False %}
         <button class="register"><a href="{% url 'user.login' %}" class="register_ancora">login</a></button>
         <button class="register"><a href="{% url 'user.register' %}" class="register_ancora">Cadastre-se</a></button>
+        {% else %}
+        <button class="register"><a href="{% url 'receber.dados' %}" class="register_ancora">Gerar Cartão</a></button>
+        {% endif %}
       </div>
       </section>
     </main>

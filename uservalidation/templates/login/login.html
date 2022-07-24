@@ -27,19 +27,33 @@
         .center_div_flex{
             margin-left:45rem; margin-top:18rem;
         }
-        .button_submit{
-            margin-top:50px;
-            font-size:15pt;
+        .button_submit, .logout_link{
+        font-weight:bolder;
+        color:rgb(0, 128, 0);
+        margin-top:50px;
+        font-size:15pt;
+        }
+        .button_nav{
+        border-radius: 24px;
+        width: 196px;
+        height: 48px;
+        border: none;
+        box-shadow: rgb(0 0 0 / 14%) 9px 5px 16px 1px;
+        background-color: #f2ebe9;
+        color: white;
+        margin:1.1rem;
         }
     </style>
 </head>
 <body>
 <div class="linha">
     <p style="color:rgb(124, 224, 169)"> . </p>
+    <button class='button_nav'><a class='logout_link 'href="{% url 'home.intro' %}">Home</a></p></button>
     {% if request.user.is_authenticated %}
     <p><a class='logout_link'href="{% url 'logout' %}">Logout</a></p>
     {% endif %}
 </div>
+{% if request.user.is_authenticated == False %}
 <div class="container_align_center center_div_flex ">
     <div class="container">
         <h1>Vcard - login</h1>
@@ -52,5 +66,8 @@
         </div>
     </div>
 </div>
+{% else%}
+    <h1>Você já está autenticado</h1>
+{% endif %}
 </body>
 </html>
