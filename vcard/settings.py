@@ -25,22 +25,24 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY','DSsdsndikndiwuhe&@HE73y8idn2323232sidjwd*@H83hj')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'DSsdsndikndiwuhe&@HE73y8idn2323232sidjwd*@H83hj')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*',]
+ALLOWED_HOSTS = ['*', ]
 
 
 # Application definition
 
-DJANGO_OWN_APPS = ['django.contrib.admin',
+DJANGO_OWN_APPS = [
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles', ]
+    'django.contrib.staticfiles',
+]
 
 MY_LOCAL_APPS = [
     'login',
@@ -132,7 +134,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -147,5 +149,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 LOGIN_REDIRECT_URL = 'receber.dados'
 LOGOUT_REDIRECT_URL = 'home.intro'
 LOGIN_URL = 'login'
-
-# auth_user register
