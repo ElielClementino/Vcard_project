@@ -46,6 +46,32 @@
         color: white;
         margin:1.1rem;
         }
+        h2 {
+            font-size:35pt;
+            color: black;
+            text-align: center;
+            font-family: "Pangolin";
+            width: 75%;
+            background: rgb(124, 224, 169);
+            padding: 30px;
+            border-radius: 35px;
+            position: relative;
+            margin-left: 2%;
+        }
+        h2:before {
+            content: "";
+            position: absolute;
+            border-left: 20px solid rgb(124, 224, 169);
+            border-right: 20px solid transparent;
+            border-top: 20px solid rgb(124, 224, 169);
+            border-bottom: 20px solid transparent;
+            right: -20px;
+            top: 10px;
+        }
+        p {
+            font-size:25pt;
+            font-family: "Sawarabi Gothic", sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -68,7 +94,10 @@
         </div>
     </div>
     {% else %}
-    <h2>Você só poderá utilizar o site após efetuar o login</h2>
+    <h2>
+        Você só poderá utilizar o site após efetuar o login
+        <p>Clique <a href="login/login.html">aqui</a> para fazer login</p>
+    </h2>
     {% endif %}
 </body>
 </html>
