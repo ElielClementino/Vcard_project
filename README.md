@@ -14,7 +14,9 @@
 <hr>
 <h2>Colaboradores(a):</h2>
 <div style='display:flex;'>
-<a href='https://github.com/AnaClaraCoelho'><img style='width:120px; height:120px; border-radius:50px;'src='https://avatars.githubusercontent.com/u/94757087?v=4'></a>
-<img style='width:120px; height:120px; border-radius:50px;' src='https://avatars.githubusercontent.com/u/103268344?v=4'>
+<a href='https://github.com/ElielClementino'><img style='width:120px; height:120px; border-radius:50px;'src='https://avatars.githubusercontent.com/u/94757087?v=4'></a>
+
+<a href='https://github.com/AnaClaraCoelho'><img style='width:120px; height:120px; border-radius:50px;' src='https://avatars.githubusercontent.com/u/103268344?v=4'></a>
+
 <a href='https://github.com/lorrananeves'><img style='width:120px; height:120px;border:solid 2px #000; border-radius:50px;' src='https://avatars.githubusercontent.com/u/104435948?v=4'></a>
 </div>
