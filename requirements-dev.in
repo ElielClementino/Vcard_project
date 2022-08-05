@@ -1,9 +1,0 @@
--r requirements.in
-flake8
-pip-tool
-django-debug-toolbar
-django-on-heroku
-gunicorn
-tzdata
-uWSGI
-whitenoise
